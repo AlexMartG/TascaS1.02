@@ -4,9 +4,11 @@ function checkGrade($score) {
 
     if ($score >= 60) {
         return "First Division";
-    } elseif ($score >= 45 && $score <= 59) {
+    } 
+    if ($score >= 45) {
         return "Second Division";
-    } elseif ($score >= 33 && $score <= 44) {
+    }
+    if ($score >= 33) {
         return "Third Division";
     } else {
         return "Fail";

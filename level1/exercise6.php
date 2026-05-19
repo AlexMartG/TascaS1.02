@@ -1,21 +1,9 @@
 <?php
 
-function isBitten() {
-
-    $randomNumber = rand(0, 1);
-
-    if ($randomNumber == 1) {
-        return true;
-    } else {
-        return false;
-    }
-
+function isBitten(): bool {
+    return rand(0, 1) == 1;
 }
 
-if (isBitten()) {
-    echo "Charlie bit my finger!";
-} else {
-    echo "Charlie did not bite my finger!";
-}
+echo isBitten() ? "Charlie bit my finger!" : "Charlie did not bite my finger!";
 
 ?>
